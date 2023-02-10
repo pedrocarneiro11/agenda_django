@@ -16,6 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('titulo', models.CharField(max_length=100)),
+                ('local', models.CharField(max_length=100)),
                 ('descricao', models.TextField(blank=True, null=True)),
                 ('data_evento', models.DateTimeField()),
                 ('data_criacao', models.DateTimeField(auto_now=True)),
